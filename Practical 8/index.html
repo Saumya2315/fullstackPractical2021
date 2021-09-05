@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #container {
+            width: 1200px;
+
+            /* border: solid; */
+            padding: 15px;
+            margin: 0px auto;
+        }
+
+        h1 {
+            color: black;
+            font-size: 40px;
+
+            text-align: center;
+            padding: 25px 0px;
+        }
+
+        #header {
+            background-color: grey;
+            height: 100px;
+            /* border-radius: 15px; */
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            color: white;
+        }
+
+        #banner {
+            margin-top: 70px;
+            height: 680px;
+            margin-bottom: 15px;
+            display: flex;
+            font-size: 40px;
+            background-image: url(./image/banner.jpg);
+            background-size: cover;
+            color: white;
+        }
+
+        #circle-container {
+            /* border: solid red; */
+            width: 100%;
+            margin: 15px auto;
+        }
+
+        #circle-container::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .circle img {
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+            background-color: goldenrod;
+            float: left;
+            margin-left: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+
+        #grid-container {
+            /* border: solid green; */
+            width: 100%;
+            margin: 15px auto;
+
+        }
+
+        #grid-container::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .grid {
+           
+             display:inline-block;
+        }
+
+        #footer {
+            background-color: plum;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            color: white;
+        }
+
+       
+
+        #sec2-container::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        #left-side {
+            width: 50%;
+            height: 550px;
+            background-color: orange;
+            float: left;
+            display: flex;
+            padding: 20px 0px 20px 20px;
+            font-size: 40px;
+        }
+
+        #right-side {
+            width: 48%;
+            height: 550px;
+            float: right;
+        }
+
+        .artical {
+            height: 31%;
+            margin-bottom: 20px;
+            background-color: chocolate;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            overflow: hidden;
+        }
+
+        #p1 {
+            background-image: url(image/p1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #p2 {
+            background-image: url(image/p2.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #p3 {
+            background-image: url(image/p3.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .content {
+            justify-content: center;
+            text-align: center;
+            color: black;
+            padding-bottom: 5px;
+        }
+
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .box {
+             width:22%;
+           
+          padding:10px;
+          border-radius: 10px;
+          margin:15px;
+          padding-bottom:15px;
+          box-shadow: 10px 10px 10px #000;
+          display: inline-block;
+           
+        }
+
+        #container {
+           
+            display: inline-block;
+            margin-right: 20px;
+
+        }
+
+        .box img {
+            width: 100%;
+            height: 150px;
+            border-radius: 5px;
+        }
+
+        .box h4 {
+            text-align: center;
+            margin: 10px;
+        }
+
+        .mybutton {
+            text-decoration: none;
+            display: block;
+            margin-top: 10px;
+            color: white;
+            font-family: Arial;
+            background-color: red;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        .mybutton:hover {
+            background-color: purple;
+        }
+        .header{
+    width:100%;
+    height:75px;
+    background-color: paleturquoise;
+    margin-bottom:10px;
+   position:fixed;
+   top: 0;
+   display:flex;
+   justify-content: center;
+
+}
+.header ul{
+   
+   text-align:center;
+   list-style-type: none;
+}
+.header ul li{
+    display: inline-block;
+    justify-content: center;
+    padding:20px;
+
+}
+.header ul li a{
+    font-size:30px;
+    text-decoration: none;
+    color:black;
+}
+.header ul li:hover{
+    background-color: rgb(255, 0, 13);
+}
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="header">
+          
+        <ul class="menu">
+          <li><a href="#top">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#circle-container">Team</a></li>
+          <li><a href="#Technologies">Technologies</a></li>
+          <li><a href="#contact">contact</a></li>
+
+          
+        </ul>
+      </div>
+      <a name="top"></a>
+        </div>
+        <div id="banner">Practical-8</div>
+        <div id="circle-container">
+            <a name="team"></a>
+            <h1>Team Members</h1>
+            <div class="circle"><img src="image/women.png"></div>
+            <div class="circle"><img src="image/men.png"></div>
+            <div class="circle"><img src="image/men 1.png"></div>
+            <div class="circle"><img src="image/women 1.png"></div>
+        </div>
+        <div id="sec2-container">
+            <a name="about"></a>
+            <h1>About Us</h1>
+            <div id="left-side">
+                <div id="content">
+                    <b>
+                        <h4 style="padding-bottom: 20px;">About</h4>
+                    </b>
+                    <p style="font-size: 25px;">Full-stack refers to a group of programming languages and tools a
+                        developer learns to handle both the front-end and back-end
+                        development of a website. MEAN stack, on the other hand, is a popular full-stack framework,
+                        which consists of MongoDB, Express.js,
+                        AngularJS, and NodeJS.
+                        Full-stack isn’t necessarily restricted to a particular set of languages, while frameworks like
+                        MEAN stack is. As a full-stack
+                        developer, you’ll have to learn multiple languages related to web development along with a few
+                        concepts of web design.
+                        Full Stack Developer is an engineer who works on both client-side and server-side of the
+                        software application. This type of developer works on the Full Stack of a software application
+                        meaning Front end development, Back end development, Database, Server, API, and version
+                        controlling systems. Hence, the name “Full Stack” Developer.
+                    </p>
+                </div>
+
+            </div>
+            <div id="right-side">
+                <div class="artical" id="p1">
+                    <h2>Artical-1</h2>
+                </div>
+                <div class="artical" id="p2">
+                    <h2>Artical-2</h2>
+                </div>
+                <div class="artical" id="p3">
+                    <h2>Artical-3</h2>
+                </div>
+            </div>
+        </div>
+        <div id="grid-container">
+            <a name="Technologies"></a>
+            <h1>Technologies Used</h1>
+            <div class="grid">
+                <div class="box">
+                    <div class="image-heading">
+                        <img src="image/html 1.png">
+                    </div>
+                    <h4>Introduction to HTML </h4>
+                    <p>HTML is the standard markup language for documents designed to be displayed in a web browser.</p>
+                    <div class="image" style="text-align: center;">
+                        <a href="https://saumya2315.github.io/fullstackPractical2021/HTML/" class="mybutton">Read
+                            more</a>
+                    </div>
+                </div>
+                
+                    <div class="box">
+                        <div class="image-heading">
+                            <img src="image/css 1.png">
+                        </div>
+                        <h4>Introduction to CSS </h4>
+                        <p>Cascading Style Sheets is a style sheet language used for describing the presentation of a
+                            document.</p>
+                        <div class="image" style="text-align: center;">
+                            <a href="https://saumya2315.github.io/fullstackPractical2021/CSS/" class="mybutton">Read
+                                more</a>
+                        </div>
+                    </div>
+               
+               
+                        <div class="box">
+                            <div class="image-heading">
+                                <img src="image/Bootstrap 1.png">
+                            </div>
+                            <h4>Introduction to BOOTSTRAP</h4>
+                            <p>BOOTSTRAP is a free front-end framework for faster and easier web development Lorem ipsum dolor sit amet consectetur, </p>
+                            <div class="image" style="text-align: center;">
+                                <a href="https://saumya2315.github.io/fullstackPractical2021/BOOTSTRAP/"
+                                    class="mybutton">Read more</a>
+                            </div>
+                        </div>
+                   
+                   
+                        <div class="box">
+                            <div class="image-heading">
+                                <img src="image/jquery 1.png">
+                            </div>
+                            <h4>Introduction to JQUERY </h4>
+                            <p>jQuery is a cross-platform JavaScript library designed to simplify the client-side
+                                scripting of HTML.</p>
+                            <div class="image" style="text-align: center;">
+                                <a href="https://saumya2315.github.io/fullstackPractical2021/JQUERY/"
+                                    class="mybutton">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+            
+            </div>
+            <center><h1>contact</h1></center>
+            <div id="footer">
+              <a name="contact"></a>
+              <p style="font-size:14px;">
+                Website Template for Practical-8 &copy;
+                <a href="https://beta-labs.in">Beta-labs</a><br /><br />
+                <a href="#top">Back to top</a>
+              </p>
+            </div>
+        </div>
+</body>
+
+</html>
