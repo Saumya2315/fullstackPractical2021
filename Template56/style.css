@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navBar{
+    display: flex;
+    justify-content:center;
+    border: 2px solid rgba(245, 245, 245, 0.932);
+    margin-bottom: 1rem;
+}
+.heading{
+     margin-right: 25rem; 
+     margin-top: 7px;
+     margin-left: 2rem;
+     margin-bottom: 4px;
+}
+.listItem li{
+    float:left;
+    list-style: none;
+    padding-right: 1rem;
+    margin-top: 14px;
+}
+#a{
+    color: rgba(0, 81, 255, 0.747);
+}
+#gt{
+    background-color: rgba(0, 81, 255, 0.747);
+    color: white;
+    border: 1px solid rgba(0, 81, 255, 0.747);
+    border-radius: 20px;
+    text-align: center;
+    padding-left: 8px;
+}
+.main{
+display: flex;
+}
+.content{
+    margin-left: 1rem;
+}
+.main_content{
+    margin-right: 17rem;
+    margin-left: 2rem;
+}
+.btn{
+    margin-top: 1rem;
+}
+.btn a{
+    text-decoration: none;
+    border: 1px solid blue;
+    background-color: white;
+    color: blue;
+    border-radius: 20px;  
+    padding:7px 2rem;  
+}
+.lowersection{
+    display: flex;
+    justify-content: justify;
+    align-items: center;
+    margin-top: 3rem;
+    margin-left: 1rem;
+}
+.photo img{
+    width: 450px;
+    height: 380px;
+    margin-left: 2rem;
+}
+.content{
+    display: flex;
+    justify-content: justify;
+    align-items: center;
+
+}
+.c1{
+    text-overflow: hidden;
+    padding-right: 2rem;
+}
