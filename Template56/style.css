@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 .navBar{
+    font-family: Arial;
     display: flex;
     justify-content:center;
     border: 2px solid rgba(245, 245, 245, 0.932);
